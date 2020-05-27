@@ -11,7 +11,7 @@ function New-NgApp {
     }
 
     $start = Get-Location
-    $excludes = "node_modules", "Create-NgApp.psm1"
+    $excludes = "node_modules", "New-NgApp.psm1"
 
     Get-ChildItem $PSScriptRoot
       | Where-Object{$_.Name -notin $excludes}
