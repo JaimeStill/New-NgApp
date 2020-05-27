@@ -1,0 +1,26 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+@import '~material-icons/iconfont/material-icons.css';
+@import '~roboto-fontface/css/roboto/roboto-fontface.css';
+@import './styles.scss';
+@import './snacker.scss';
+@import './utilities.scss';
+@import './flex.scss';
+@import './grid.scss';
+
+$light-primary: mat-palette($mat-blue, 800);
+$light-accent: mat-palette($mat-amber, 500);
+
+$dark-primary: mat-palette($mat-blue, A400);
+$dark-accent: mat-palette($mat-amber, 500);
+
+.app-light {
+  $default-theme: mat-light-theme($light-primary, $light-accent);
+  @include style-theme($default-theme);
+  @include angular-material-theme($default-theme);
+}
+
+.app-dark {
+  $default-theme: mat-dark-theme($dark-primary, $dark-accent);
+  @include style-theme($default-theme);
+  @include angular-material-theme($default-theme);
+}
