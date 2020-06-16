@@ -7,18 +7,23 @@ import { RouterModule } from '@angular/router';
 import { MaterialModule } from './material.module';
 import { ServicesModule } from './services.module';
 
-import {
-  Routes,
-  RouteComponents
-} from './routes';
-
 import { AppComponent } from './app.component';
-import { Services } from './services';
+
+import { Routes, RouteComponents } from './routes';
+import { Components } from './components';
+import { Dialogs } from './dialogs';
+import { Directives } from './directives';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ...RouteComponents
+    ...RouteComponents,
+    ...Components,
+    ...Dialogs,
+    ...Directives
+  ],
+  entryComponents: [
+    ...Dialogs
   ],
   imports: [
     BrowserModule,

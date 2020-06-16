@@ -16,12 +16,7 @@
     "component-class-suffix": true,
     "contextual-lifecycle": true,
     "directive-class-suffix": true,
-    "directive-selector": [
-      true,
-      "attribute",
-      "app",
-      "camelCase"
-    ],
+    "directive-selector": false,
     "component-selector": false,
     "eofline": true,
     "import-blacklist": [
@@ -71,6 +66,7 @@
       true,
       "as-needed"
     ],
+    "one-variable-per-declaration": false,
     "quotemark": [
       true,
       "single"
