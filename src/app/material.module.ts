@@ -10,6 +10,7 @@ import {
 } from '@angular/material/core';
 
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
@@ -48,6 +49,7 @@ import { MatTreeModule } from '@angular/material/tree';
 @NgModule({
   exports: [
     DragDropModule,
+    FlexLayoutModule,
     MatAutocompleteModule,
     MatBadgeModule,
     MatBottomSheetModule,
